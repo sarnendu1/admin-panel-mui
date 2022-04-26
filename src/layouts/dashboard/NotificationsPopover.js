@@ -115,7 +115,7 @@ export default function NotificationsPopover() {
         </Badge>
       </IconButton>
 
-      <MenuPopover
+      {/* <MenuPopover
         open={Boolean(open)}
         anchorEl={open}
         onClose={handleClose}
@@ -162,7 +162,7 @@ export default function NotificationsPopover() {
               </ListSubheader>
             }
           >
-            {notifications.slice(2, 5).map((notification) => (
+            {notifications.slice(0,0).map((notification) => (
               <NotificationItem key={notification.id} notification={notification} />
             ))}
           </List>
@@ -175,7 +175,7 @@ export default function NotificationsPopover() {
             View All
           </Button>
         </Box>
-      </MenuPopover>
+      </MenuPopover> */}
     </>
   );
 }

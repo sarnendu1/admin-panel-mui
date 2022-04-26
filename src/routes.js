@@ -20,9 +20,9 @@ export default function Router() {
       element: <DashboardLayout />,
       children: [
         { path: 'app', element: <DashboardApp /> },
-        { path: 'user', element: <User /> },
-        { path: 'products', element: <Products /> },
-        { path: 'blog', element: <Blog /> },
+        { path: 'user', element: <DashboardApp /> },
+        { path: 'products', element: <DashboardApp /> },
+        { path: 'blog', element: <DashboardApp /> },
       ],
     },
     {
@@ -30,8 +30,8 @@ export default function Router() {
       element: <LogoOnlyLayout />,
       children: [
         { path: '/', element: <Navigate to="/dashboard/app" /> },
-        { path: 'login', element: <Login /> },
-        { path: 'register', element: <Register /> },
+        { path: 'login', element: <DashboardApp /> },
+        { path: 'register', element: <DashboardApp /> },
         { path: '404', element: <NotFound /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],

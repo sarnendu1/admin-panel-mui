@@ -90,7 +90,8 @@ export default function DashboardApp() {
                 
               ]}
               chartColors={[
-                theme.palette.primary.main,
+                theme.palette.primary.america,
+                theme.palette.primary.asia,
                 
               ]}
             />
